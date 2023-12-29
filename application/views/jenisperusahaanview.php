@@ -13,7 +13,7 @@
     }
 
     .scrolling-table {
-      max-height: 590px; /* Set the maximum height for the table */
+      height: 672px; /* Set the maximum height for the table */
       overflow-y: auto; /* Enable vertical scrolling */
     }
 
@@ -24,7 +24,7 @@
     }
     </style>
 
-  <title>jenisperusahaan</title>
+  <title>jenis perusahaan</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
     <table class="table table-hover text-left">
       <thead class="table-dark sticky-header">
         <tr>
-          <th scope="col">ID</th>
+          <th scope="col">NO</th>
           <th scope="col">Jenis Perusahaan</th>
           <th scope="col">Aksi</th>
 
@@ -45,7 +45,7 @@
       <?php foreach ($jenisperusahaan as $row) { ?>
           <tr>
             <td><?php echo $row["id"] ?></td>
-            <td><?php echo $row["jenisperusahaan"] ?></td>
+            <td><?php echo $row["jenis_perusahaan"] ?></td>
             <td>
             <a href="<?php echo base_url('jenisperusahaan/edit/' . $row['id']); ?>"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
             <a href="<?php echo base_url('jenisperusahaan/delete/' . $row['id']); ?>" onclick="return confirm('Kamu Yakin Mau Hapus Ini?');">

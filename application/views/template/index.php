@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Sidebar 1</title>
+    <title>WEB PUSBAKOR</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,26 +23,32 @@
             <hr>
             <ul class="mynav nav nav-pills flex-column mb-auto">
                 <li class="nav-item mb-1">
+                    <a href="<?php echo base_url('dashboard'); ?>" class="" style="color: white;">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>    
+                </li>
+                <li class="nav-item mb-1">
                     <a href="<?php echo base_url('proyek'); ?>" class="" style="color: white;">
-                        <i class="fa-solid fa-circle"></i>
+                        <i class="fa-solid fa-star"></i>
                         Proyek
                     </a>    
                 </li>
                 <li class="nav-item mb-1">
                     <a href="<?php echo base_url('perusahaan'); ?>" class="" style="color: white;">
-                        <i class="fa-solid fa-diamond"></i>
+                        <i class="fa-solid fa-star"></i>
                         Perusahaan
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="<?php echo base_url('jenisperusahaan'); ?>" class="" style="color: white;">
-                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-star"></i>
                         Jenis Perusahaan
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="<?php echo base_url('kbli'); ?>" class="" style="color: white;">
-                        <i class="fa-solid fa-chart-simple"></i>
+                        <i class="fa-solid fa-star"></i>
                         KBLI
                     </a>
                 </li>
@@ -54,29 +60,47 @@
                 </li>
                 <li class="nav-item mb-1">
                     <a href="<?php echo base_url('desa'); ?>" class="" style="color: white;">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i class="fa-solid fa-star"></i>
                         Desa
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="<?php echo base_url('modal'); ?>" class="" style="color: white;">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-star"></i>
                         Modal
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="<?php echo base_url('skala'); ?>" class="" style="color: white;">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-star"></i>
                         Skala
                     </a>
                 </li>
                 <li class="nav-item mb-1">
                     <a href="<?php echo base_url('resiko'); ?>" class="" style="color: white;">
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-star"></i>
                         Resiko
                     </a>
                 </li>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <hr>
+                <li class="nav-item mb-1 text-center">
+                    <a href="<?php echo base_url('login/logout'); ?>" class="btn btn-danger text-light " style="color: white;">
+                        <i class="fa-solid fa-door-open"></i>
+                        Logout
+                    </a>
+                </li>
             </ul>
+            
             <hr>
             <div class="d-flex">
                 <img src="img/profile_user.jpeg" class="img-fluid rounded me-2" width="50px" alt="">

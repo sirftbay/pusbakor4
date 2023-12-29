@@ -39,5 +39,8 @@ class modalmodel extends CI_Model {
         $this->db->delete('modal');
         return $this->db->affected_rows();
     }
+    public function hitung(){
+        return $this->db->count_all('modal');
+    }
 }
 ?>

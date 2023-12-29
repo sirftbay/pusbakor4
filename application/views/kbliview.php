@@ -13,7 +13,7 @@
     }
 
     .scrolling-table {
-      max-height: 590px; /* Set the maximum height for the table */
+      height: 672px; /* Set the maximum height for the table */
       overflow-y: auto; /* Enable vertical scrolling */
     }
 
@@ -36,7 +36,7 @@
     <table class="table table-hover text-left">
       <thead class="table-dark sticky-header">
         <tr>
-          <th scope="col">ID</th>
+          <th scope="col">NO</th>
           <th scope="col">KBLI</th>
           <th scope="col">Pembina</th>
           <th scope="col">Aksi</th>

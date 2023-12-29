@@ -70,7 +70,7 @@ class jenisperusahaan extends CI_Controller {
         $id = $this->input->post('id');
         
         $data = array(
-            'jenisperusahaan' => $this->input->post('jenisperusahaan'),
+            'jenis_perusahaan' => $this->input->post('jenis_perusahaan'),
             // Tambahkan field lainnya sesuai dengan struktur tabel jenisperusahaan
         );
     
@@ -100,7 +100,7 @@ class jenisperusahaan extends CI_Controller {
     
     public function insert() {
         $data = array(
-            'jenisperusahaan' => $this->input->post('jenisperusahaan'),
+            'jenis_perusahaan' => $this->input->post('jenis_perusahaan'),
             // Tambahkan field lainnya sesuai dengan struktur tabel jenisperusahaan
         );
     

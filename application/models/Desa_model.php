@@ -39,5 +39,8 @@ class Desa_model extends CI_Model {
         $this->db->delete('desa');
         return $this->db->affected_rows();
     }
+    public function hitung(){
+        return $this->db->count_all('desa');
+    }
 }
 ?>

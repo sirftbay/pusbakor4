@@ -13,7 +13,7 @@
     }
 
     .scrolling-table {
-      max-height: 590px; /* Set the maximum height for the table */
+      max-height: 672px; /* Set the maximum height for the table */
       overflow-y: auto; /* Enable vertical scrolling */
     }
 
@@ -35,7 +35,7 @@
     <table class="table table-hover text-left">
       <thead class="table-dark sticky-header">
         <tr>
-          <th scope="col">ID</th>
+          <th scope="col">NO</th>
           <th scope="col">NIB</th>
           <th scope="col">NPWP</th>
           <th scope="col">Perusahaan</th>
@@ -51,7 +51,7 @@
             <td><?php echo $row["nib"] ?></td>
             <td><?php echo $row["npwp"] ?></td>
             <td><?php echo $row["nama"] ?></td>
-            <td><?php echo $row["jenis_perusahaan_id"] ?></td>
+            <td><?php echo $row["jenis_perusahaan"] ?></td>
             <td>
             <a href="<?php echo base_url('perusahaan/edit/' . $row['id']); ?>"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
             <a href="<?php echo base_url('perusahaan/delete/' . $row['id']); ?>" onclick="return confirm('Kamu Yakin Mau Hapus Ini?');">

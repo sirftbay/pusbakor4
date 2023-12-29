@@ -16,6 +16,15 @@ class proyek extends CI_Controller {
         $this->load->view('template/index',$data);
     }
 
+    public function view() {
+        $this->load->model('proyekmodel');
+        $data['proyek'] = $this->proyekmodel->get_all_data();
+        $data['judul'] = "Data Proyek";
+        $data['content']=$this->load->view('proyekview', $data,true);
+        $this->load->view('template/index',$data);
+        
+    }
+
     // Mendapatkan data proyek berdasarkan id
     public function index_post() {
         $id = $this->input->post('id');

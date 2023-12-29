@@ -15,6 +15,14 @@ class perusahaan extends CI_Controller {
         $data['content']=$this->load->view('perusahaanview', $data,true);
         $this->load->view('template/index',$data);
     }
+    public function view() {
+        $this->load->model('perusahaanmodel');
+        $data['perusahaan'] = $this->perusahaanmodel->get_all_data();
+        $data['judul'] = "Data perusahaan";
+        $data['content']=$this->load->view('perusahaanview', $data,true);
+        $this->load->view('template/index',$data);
+        
+    }
 
     // Mendapatkan data perusahaan berdasarkan id
     public function index_post() {

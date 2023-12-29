@@ -12,7 +12,7 @@
         color: red;
     }
     .scrolling-table {
-      max-height: 590px; /* Set the maximum height for the table */
+      max-height: 672px; /* Set the maximum height for the table */
       overflow-y: auto; /* Enable vertical scrolling */
       overflow-x: auto;
     }
@@ -35,7 +35,7 @@
     <table class="table table-hover text-left">
       <thead class="table-dark sticky-header">
         <tr>
-          <th scope="col">ID</th>
+          <th scope="col">NO</th>
           <th scope="col">No Proyek</th>
           <th scope="col">Longitude</th>
           <th scope="col">Latitude</th>
@@ -61,13 +61,13 @@
             <td><?php echo $row["latitude"] ?></td>
             <td><?php echo $row["investasi"] ?></td>
             <td><?php echo $row["alamat"] ?></td>
-            <td><?php echo $row["perusahaan_id"] ?></td>
-            <td><?php echo $row["modal_id"] ?></td>
-            <td><?php echo $row["resiko_id"] ?></td>
-            <td><?php echo $row["skala_id"] ?></td>
-            <td><?php echo $row["kecamatan_id"] ?></td>
-            <td><?php echo $row["desa_id"] ?></td>
-            <td><?php echo $row["kbli_id"] ?></td>
+            <td><?php echo $row["nama"] ?></td>
+            <td><?php echo $row["modal"] ?></td>
+            <td><?php echo $row["resiko"] ?></td>
+            <td><?php echo $row["skala"] ?></td>
+            <td><?php echo $row["kecamatan"] ?></td>
+            <td><?php echo $row["desa"] ?></td>
+            <td><?php echo $row["judul"] ?></td>
             <td>
             <a href="<?php echo base_url('proyek/edit/' . $row['id']); ?>"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
             <a href="<?php echo base_url('proyek/delete/' . $row['id']); ?>" onclick="return confirm('Kamu Yakin Mau Hapus Ini?');">

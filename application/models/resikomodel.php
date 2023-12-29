@@ -38,6 +38,9 @@ class resikomodel extends CI_Model {
         $this->db->where('id', $id);
         $this->db->delete('resiko');
         return $this->db->affected_rows();
+    } 
+    public function hitung(){
+        return $this->db->count_all('resiko');
     }
 }
 ?>

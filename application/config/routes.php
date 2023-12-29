@@ -70,6 +70,8 @@ $route['skala']= 'skala/index';
 
 $route['kbli']= 'kbli/index';
 
-$route['perusahaan']= 'perusahaan/index';
+$route['perusahaan']= 'perusahaan/view';
 
-$route['proyek']= 'proyek/index';
+$route['proyek']= 'proyek/view';
+
+$route['login'] = 'login/index';  

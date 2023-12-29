@@ -39,5 +39,9 @@ class skalamodel extends CI_Model {
         $this->db->delete('skala');
         return $this->db->affected_rows();
     }
+    public function hitung(){
+        return $this->db->count_all('skala');
+    }
+
 }
 ?>
