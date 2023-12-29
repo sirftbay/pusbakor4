@@ -25,7 +25,7 @@ class Login extends CI_Controller {
         if ($user_data) {
             // Set user data in session
             $this->session->set_userdata($user_data);
-            redirect('desa');
+            redirect('dashboard');
         } else {
             // Incorrect credentials, redirect back to login page
             redirect('login');

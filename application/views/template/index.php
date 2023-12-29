@@ -91,15 +91,14 @@
                 <br>
                 <br>
                 <br>
-
-                <hr>
-                <li class="nav-item mb-1 text-center">
+            </ul>
+            <hr>
+            <div class="nav-item mb-1 text-center">
                     <a href="<?php echo base_url('login/logout'); ?>" class="btn btn-danger text-light " style="color: white;">
                         <i class="fa-solid fa-door-open"></i>
                         Logout
                     </a>
-                </li>
-            </ul>
+            </div>
             
             <hr>
             <div class="d-flex">
@@ -120,7 +119,7 @@
             </div>    
                 <div class="row">
                     <div class="col">
-                    <nav class="navbar navbar-light justify-content-center fs-3 mb-3" style="background-color: #00ff5573;">
+                    <nav class="navbar navbar-light fw-bold justify-content-center fs-3 mb-3" style="background-color: #00ff5573;">
                       <?php echo $judul; ?>
                     </nav>
                         <?php echo $content; ?>
